@@ -70,3 +70,14 @@ The **master** performs the following actions: views the list of orders availabl
 The **storekeeper** performs the following actions: views the list of spare parts in the warehouse; edits the spare part record; changes the quantity of spare parts in the warehouse; removes a spare part from the warehouse; adds a new spare part to the warehouse; views the list of orders awaiting receipt of spare parts; confirms the availability of spare parts required to repair the order.
 
 ### Images
+![Admin main page](https://github.com/Kirill-Sidorov/Workroom/blob/readmedata/images/adminMainPage.jpg)
+|:--:| 
+| *Image 1 - Admin main page* |
+![Moderator main page](https://github.com/Kirill-Sidorov/Workroom/blob/readmedata/images/moderatorMainPage.jpg)
+| *Image 2 - Moderator main page* |
+![Customer main page](https://github.com/Kirill-Sidorov/Workroom/blob/readmedata/images/customerMainPage.jpg)
+| *Image 3 - Customer main page* |
+![Master main page](https://github.com/Kirill-Sidorov/Workroom/blob/readmedata/images/masterMainPage.jpg)
+| *Image 4 - Master main page* |
+![Storekeeper main page](https://github.com/Kirill-Sidorov/Workroom/blob/readmedata/images/storekeeperMainPage.jpg)
+| *Image 5 - Storekeeper main page* |
