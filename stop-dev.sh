@@ -4,4 +4,4 @@
 mvn jetty:stop -Pdev
 
 # Stop Postgres DB
-docker-compose down
+docker compose down
