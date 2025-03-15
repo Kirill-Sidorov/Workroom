@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+import static org.sidorov.workroom.command.Command.EMPTY;
 import static org.sidorov.workroom.command.result.ResponseType.FORWARD;
 import static org.sidorov.workroom.command.result.ResponseType.REDIRECT;
 
@@ -43,17 +44,16 @@ public class FrontController extends HttpServlet {
 
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        Command commandType;
         String commandString = request.getParameter("command");
-        if (commandString == null || commandString.isEmpty()) {
-            commandType = Command.EMPTY;
+        if (commandString == null) {
+            commandString = EMPTY.toString();
+        }
 
-        } else {
-            try {
-                commandType = Command.valueOf(commandString.toUpperCase());
-            } catch (IllegalArgumentException e) {
-                commandType = Command.EMPTY;
-            }
+        Command commandType;
+        try {
+            commandType = Command.valueOf(commandString.toUpperCase());
+        } catch (IllegalArgumentException e) {
+            commandType = EMPTY;
         }
 
         Result result = commandType.getCommand().execute(request);
